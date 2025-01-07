@@ -111,7 +111,7 @@ def main():
     col1, col2, col3 = st.columns([1, 0.3, 2])
 
     with col1:
-        st.image("D:/github-portfolio/pofo st/photo.png", caption="Arun Kashyap", use_container_width=True)
+        st.image("photo.png", caption="Arun Kashyap", use_container_width=True)
 
     with col2:
         st.write("")
