@@ -126,9 +126,7 @@ def main():
         """)
         st.subheader("About me")
         st.write(""" 
-                    I am a technology enthusiast with a keen eye for detail and a passion for solving real-world problems through innovative solutions. With expertise in Machine Learning, Deep Learning, Generative AI Application, Data Analysis & Statistical Modeling, Natural Language Processing (NLP) and Big Data Analytics.
-                    
-                    I specialize in transforming complex ideas into functional, impactful projects.
+                    I am a technology enthusiast with a keen eye for detail and a passion for solving real-world problems through innovative solutions. With expertise in Machine Learning, Deep Learning, Generative AI Application, Data Analysis & Statistical Modeling, Natural Language Processing (NLP) and Big Data Analytics. I specialize in transforming complex ideas into functional, impactful projects.
 
                     My journey is fueled by curiosity and a commitment to continuous learning. Whether it's optimizing processes, creating user-friendly applications, or driving data-driven decisions, I aim to deliver excellence in every endeavor.
                     
