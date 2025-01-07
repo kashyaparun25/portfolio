@@ -125,7 +125,13 @@ def main():
         💼 [LinkedIn](http://www.linkedin.com/in/hv-arunkashyap) | 🔗 [GitHub](https://github.com/kashyaparun25) | 🌐 [Hugging Face](https://huggingface.co/kashyaparun)
         """)
         st.subheader("About me")
-        st.write("Hi! I'm Arun, a motivated data scientist passionate about revolutionizing how data is utilized in daily life.")
+        st.write(""" 
+                    I am a technology enthusiast with a keen eye for detail and a passion for solving real-world problems through innovative solutions. With expertise in [mention specific domains or skills, e.g., data analytics, machine learning, or full-stack development], I specialize in transforming complex ideas into functional, impactful projects.
+
+                    My journey is fueled by curiosity and a commitment to continuous learning. Whether it's optimizing processes, creating user-friendly applications, or driving data-driven decisions, I aim to deliver excellence in every endeavor.
+                    
+                    
+                    """)
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Education Section
