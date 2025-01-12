@@ -8,7 +8,7 @@ def main():
         layout="wide"
     )
 
-    # Custom CSS for better styling with Nunito font and smooth scrolling
+    # Custom CSS remains the same as in your original code
     st.markdown("""
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
         <style>
@@ -85,7 +85,7 @@ def main():
         </style>
     """, unsafe_allow_html=True)
 
-    # Sidebar
+    # Sidebar remains the same
     with st.sidebar:
         st.title("Navigation")
         sections = {
@@ -95,8 +95,8 @@ def main():
             "Certifications": "certifications",
             "Experience": "experience",
             "Projects": "projects",
+            "Activities": "activities",
             "Articles": "articles",
-            
         }
 
         st.markdown("### Sections")
@@ -105,13 +105,12 @@ def main():
                 <a href="#{section_id}" class="nav-link">{section_name}</a>
             """, unsafe_allow_html=True)
 
-    # Main content
     # About Section
     st.markdown('<div id="about" class="section">', unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 0.3, 2])
 
     with col1:
-        st.image("photo.png", caption="Arun Kashyap", use_container_width=True)
+        st.image("D:/github-portfolio/pofo st/photo.png", caption="Arun Kashyap", use_container_width=True)
 
     with col2:
         st.write("")
@@ -122,19 +121,17 @@ def main():
         st.write("""
         📍 New York City, NY   
         📧 [hvarunkashyap@gmail.com](mailto:hvarunkashyap@gmail.com) | 📱 +1 (201) 275-8046  
-        💼 [LinkedIn](http://www.linkedin.com/in/hv-arunkashyap) | 🔗 [GitHub](https://github.com/kashyaparun25) | 🌐 [Hugging Face](https://huggingface.co/kashyaparun)
+        💼 [LinkedIn](http://www.linkedin.com/in/hv-arunkashyap) | 🔗 [GitHub](https://github.com/kashyaparun25)
         """)
         st.subheader("About me")
-        st.write(""" 
-                    I am a technology enthusiast with a keen eye for detail and a passion for solving real-world problems through innovative solutions. With expertise in Machine Learning, Deep Learning, Generative AI Application, Data Analysis & Statistical Modeling, Natural Language Processing (NLP) and Big Data Analytics. I specialize in transforming complex ideas into functional, impactful projects.
+        st.write("""I am a driven Data Science graduate student at Stevens Institute of Technology, passionate about transforming complex data into actionable insights using machine learning, deep learning, and Generative AI. With hands-on expertise in building AI agents, implementing model fine-tuning, and designing scalable big data pipelines, I thrive on solving real-world challenges with cutting-edge technologies.
 
-                    My journey is fueled by curiosity and a commitment to continuous learning. Whether it's optimizing processes, creating user-friendly applications, or driving data-driven decisions, I aim to deliver excellence in every endeavor.
-                    
-                    
-                    """)
+In my professional journey, I’ve collaborated with industry leaders like Autoliv and PhonePe, creating impactful HR SaaS solutions that enhanced efficiency and enabled data-driven decision-making. From developing AI-powered chatbots with LangChain to deploying PySpark pipelines for fraud detection, I bring a strong blend of technical acumen and innovation.
+
+Fueled by a passion for AI innovation and practical problem-solving, I aim to drive meaningful impact in tech-driven industries through intelligent, scalable solutions.""")
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Education Section
+    # Education Section - Updated with latest GPA
     st.markdown('<div id="education" class="section">', unsafe_allow_html=True)
     st.header("Education")
     col1, col2 = st.columns(2)
@@ -151,32 +148,43 @@ def main():
     with col2:
         st.markdown("""
         ### Presidency University
-        **BTech in Electronics and Communication Engineering** (2017 - 2021)  
+        **BTech in Electronics and Communication Engineering** (2021)  
         GPA: 3.71/4.0  
         *Courses: Artificial Neural Network, Digital Image Processing, Engineering Mathematics*
         """)
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Skills Section
+    # Skills Section - Updated with latest skills from resume
     st.markdown('<div id="skills" class="section">', unsafe_allow_html=True)
     st.header("Skills")
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.subheader("Programming Languages")
-        st.markdown("Python, C, C++")
+        st.subheader("Programming & AI Tools")
+        st.markdown("""
+        - Python (Numpy, Pandas, Scikit-learn, TensorFlow, Matplotlib, Seaborn)
+        - Hugging Face Transformers
+        - LangChain
+        - Model fine-tuning""")
 
     with col2:
-        st.subheader("Data Science Tools")
-        st.markdown("""Pandas, Numpy, Scikit-learn, TensorFlow, Tableau,    
-                    Power BI""")
+        st.subheader("Database & Visualization")
+        st.markdown("""
+        - PostgreSQL 
+        - MySQL
+        - SQL Server Management Studio (SSMS) 
+        - Power BI""")
 
     with col3:
-        st.subheader("Cloud & Databases")
-        st.markdown("Google Colab, AWS, MySQL, Microsoft SSMS")
+        st.subheader("Big Data & Cloud Platforms")
+        st.markdown("""
+        - PySpark
+        - AWS (EMR, S3)
+        - GCP (Cloud SQL, Cloud Run)
+        - Google Colab""")
     st.markdown('</div>', unsafe_allow_html=True)
 
-     # Certifications Section
+    # Certifications Section
     st.markdown('<div id="certifications" class="section">', unsafe_allow_html=True)
     st.header("Certifications")
     st.markdown("""
@@ -188,63 +196,102 @@ def main():
     """)
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Experience Section
+    # Experience Section - Updated with latest experience
     st.markdown('<div id="experience" class="section">', unsafe_allow_html=True)
     st.header("Work Experience")
 
     st.markdown("""
     ### Product Analyst | BlueTree Consultancy Services Private Limited
-    *June 2021 - June 2022, Bangalore, India*
+    *June 2021 - June 2023, Bangalore, India*
 
-    - Collaborated with clients such as Autoliv and PhonePe to gather project requirements and align HR software solutions to their needs
-    - Spearheaded comprehensive data analysis on HR operations, identifying and eliminating inefficiencies, leading to 15% improvement
-    - Designed and maintained interactive Power BI dashboards for real-time HR metrics insights
-    - Led end-to-end HR SaaS product implementations, reducing errors by 10%
+    - Collaborated with **Autoliv**, a global leader in automotive safety systems, to design and implement custom HR SaaS solutions, optimizing workforce operations and improving efficiency by 15% through advanced **Power BI dashboards**
+    - Partnered with **PhonePe**, India's leading fintech company, to integrate HR analytics with their digital payment systems, leveraging **Python scripting** and **Postman API** testing
+    - Engineered **interactive Power BI dashboards** for real-time HR metrics insights
+    - Spearheaded end-to-end HR SaaS implementations, reducing deployment errors by 10%
 
     ### IoT Intern | Invicto Energies Private Limited
     *June 2019 - August 2019, Bangalore, India*
 
-    - Engineered a data collection pipeline for smart irrigation using Python
-    - Programmed system integration with mobile applications for environmental data analysis
-    - Improved irrigation efficiency by 20% through advanced data analysis
+    - Developed a Python-based data collection pipeline for smart irrigation
+    - Integrated system with BOLT IoT mobile application for environmental data analysis
+    - Applied Regression Analysis and advanced data preprocessing techniques, improving irrigation efficiency by 20%
     """)
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Projects Section
+    # Projects Section - Updated with latest projects
     st.markdown('<div id="projects" class="section">', unsafe_allow_html=True)
     st.header("Projects")
 
-    with st.container():
-        st.markdown("""
-        ###  1. ResNet50 Unleashed: Mastering CIFAR-10 Image Recognition
-        ##### *[View Project on Github](https://github.com/kashyaparun25/ResNet50-Unleashed-Mastering-CIFAR-10-Image-Recognition)*
+    projects = [
+        {
+            "title": "ResNet50 Unleashed: Mastering CIFAR-10 Image Recognition",
+            "date": "April 2024",
+            "location": "Stevens Institute of Technology",
+            "description": [
+                "Worked on improving image recognition accuracy for the CIFAR-10 dataset (60,000 images across 10 classes)",
+                "Implemented a CNN with ResNet50, applying data preprocessing and hyperparameter tuning",
+                "Achieved 93.08% test accuracy, significantly surpassing basic CNN performance (74.11%)"
+            ],
+            "link": "https://github.com/kashyaparun25/ResNet50-Unleashed-Mastering-CIFAR-10-Image-Recognition"
+        },
+        {
+            "title": "Anti-Money Laundering Detection Using Big Data Technologies",
+            "date": "2024",
+            "location": "Stevens Institute of Technology",
+            "description": [
+                "Developed a distributed pipeline on AWS EMR using PySpark to process a 3GB dataset of 31M financial transactions",
+                "Engineered advanced features and mitigated class imbalance using SMOTE",
+                "Trained a Random Forest model, achieving AUROC: 0.95 and F1-score: 0.90"
+            ],
+            "link": "https://github.com/kashyaparun25/Anti-Money-Laundering-Detection-Using-Big-Data-Technologies"
+        },
+        {
+            "title": "AI-Powered Health Monitoring Chatbot",
+            "date": "2024",
+            "location": "Stevens Institute of Technology",
+            "description": [
+                "Built an AI-driven chatbot with LangChain for memory and agentic LLMs",
+                "Integrated WHOOP API, PostgreSQL, and Claude AI for health metrics analysis",
+                "Delivered interactive data visualizations using Matplotlib and Seaborn"
+            ],
+            "link": "https://github.com/kashyaparun25/AI-Powered-Health-Monitoring-Chatbot"
+        },
+        {
+            "title": "Emotion Classification and Mental Health Chatbot",
+            "date": "2024",
+            "location": "Stevens Institute of Technology",
+            "description": [
+                "Developed a multi-label emotion classification model using RoBERTa",
+                "Achieved a macro F1-score of 74% on the GoEmotions dataset",
+                "Implemented LangChain for conversational memory and context-aware responses"
+            ],
+            "link": "https://github.com/kashyaparun25/Mental-Health-Chatbot-using-RoBERTa-and-Gemini"
+        }
+    ]
 
-        *April 2024, Stevens Institute of Technology*
-
-        - Developed a deep learning model using ResNet50 architecture for the CIFAR-10 dataset
-        - Implemented advanced data preprocessing and hyperparameter tuning techniques
-        - Achieved 93.08% test accuracy, surpassing basic CNN performance (74.11%)
-        - Utilized GPU acceleration on Google Colab for efficient model training.
-        
-        
-                    
-                    
-        ### 2. Billionaires Unveiled: A Data-Driven Exploration 
-        ##### *[View Project on Github](https://github.com/kashyaparun25/Billionaires-Unveiled-A-Data-Driven-Exploration-of-Wealth-and-Power)*
-        *September 2023, Bangalore, India*
-
-        - Conducted comprehensive analysis of billionaire datasets using Python
-        - Created insightful visualizations using seaborn and matplotlib
-        - Improved data insights by 30% through advanced visualization techniques
-        - Generated actionable insights on wealth distribution patterns
-                    
+    for project in projects:
+        st.markdown(f"""
+        ### {project['title']}
+        ##### *[View Project on Github]({project['link']})*
+        *{project['date']}, {project['location']}*
         """)
+        for point in project['description']:
+            st.markdown(f"- {point}")
+        st.write("")
+
     st.markdown('</div>', unsafe_allow_html=True)
 
-    
-   
+    # Activities Section - New section from resume
+    st.markdown('<div id="activities" class="section">', unsafe_allow_html=True)
+    st.header("Activities")
+    st.markdown("""
+    - Secured a bronze medal at a State-level Taekwondo World Federation competition (May 2018, Bangalore, India)
+    - Volunteered as an organizer for academic and cultural events, enhancing community engagement and leadership skills (August 2023, India)
+    - Designed and managed a community garden project, fostering teamwork while promoting sustainability and environmental awareness (January 2015 - Present, India)
+    """)
+    st.markdown('</div>', unsafe_allow_html=True)
 
-   # Articles Section
+    # Articles Section
     st.markdown('<div id="articles" class="section">', unsafe_allow_html=True)
     st.header("Technical Articles")
 
@@ -252,18 +299,16 @@ def main():
         {
             "title": "AI Deception Unveiled: How Frontier Models Scheme and Fake Alignment",
             "date": "January 2025",
-            "summary": ("""Large language models like o1, Claude, and Gemini can engage in both alignment faking and in-context scheming,
+            "summary": """Large language models like o1, Claude, and Gemini can engage in both alignment faking and in-context scheming,
                         meaning they can appear to follow instructions while secretly pursuing their own goals. This highlights
-                        the potential for sophisticated deception in AI and the need for more research to prevent these issues."""),
-
+                        the potential for sophisticated deception in AI and the need for more research to prevent these issues.""",
             "link": "https://medium.com/@kashyaparun25/ai-deception-unveiled-how-frontier-models-scheme-and-fake-alignment-71a4cc12999b"
         },
         {
             "title": "Journey from LLM to LCM: How New AI Thinks in Concepts, Not Just Tokens",
             "date": "January 2025",
-            "summary":("""Tired of AI that just strings words together? A new approach, the Large Concept Model, is here to shake things up by processing ideas,
-                       not just tokens. This AI thinks and reasons at a higher level, using multilingual concepts to summarize, expand and create content more like a human would"""),
-                       
+            "summary": """Tired of AI that just strings words together? A new approach, the Large Concept Model, is here to shake things up by processing ideas,
+                       not just tokens. This AI thinks and reasons at a higher level, using multilingual concepts to summarize, expand and create content more like a human would""",
             "link": "https://medium.com/@kashyaparun25/journey-from-llm-to-lcm-how-new-ai-thinks-in-concepts-not-just-tokens-756be885a613"
         }
     ]
@@ -278,7 +323,6 @@ def main():
         </div>
         """, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
-
 
 if __name__ == "__main__":
     main()
